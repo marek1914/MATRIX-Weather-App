@@ -1,0 +1,36 @@
+# do not touch this line
+configVersion: 2
+
+name: weather
+description: Auto detects your location and shows the local weather with the use of LEDs.
+keywords: 'weather, led, location'
+
+imageUrls: 
+  - https://storage.googleapis.com/admobilize-assets/matrix-appstore-images-tmp/app-tn/weather-appView.jpg
+  - https://storage.googleapis.com/admobilize-assets/matrix-appstore-images-tmp/app-tn/weather-liveView.JPG
+
+galleryImageUrl: https://storage.googleapis.com/admobilize-assets/matrix-appstore-images-tmp/app-tn/weather-icon.png
+
+
+dataTypes:
+  forcast:
+    currentForecast: string
+  location:
+    latitude: float
+    longitude: float
+
+
+screens:
+  - - forcast
+  - - map
+
+widgets:
+  forcast:
+    display: label
+    type: forcast
+    key: currentForecast
+    label: Current Forcast
+  map:
+    display: map
+    type: location
+    label: 'Location'
