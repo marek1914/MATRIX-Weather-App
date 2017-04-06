@@ -187,26 +187,26 @@ function overcast(){
   		//clouds
   		var cloud1 = {
 			arc: 120,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: y*120+120,
 			blend: false
 		};
 		var cloud2 = {
 			arc: 120,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: y*120+300,
 			blend: false
 		};
 
 		var cloud3 = {
 			arc: 120,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: x*120+120,
 			blend: false
 		};
 		var cloud4 = {
 			arc: 120,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: x*120+300,
 			blend: false
 		};
@@ -230,13 +230,13 @@ function mostlyCloudy(){
   		//clouds
   		var cloud1 = {
 			arc: 100,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: y*120+300,
 			blend: false
 		};
 		var cloud2 = {
 			arc: 100,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: y*120+120,
 			blend: false
 		};
@@ -260,7 +260,7 @@ function partlyCloudy(){
   		//cloud
   		var cloud = {
 			arc: 90,
-			color: 'rgba(255,255,0,1)',
+			color: 'rgba(255,255,255,1)',
 			start: 120+y*120,
 			blend: false
 		};
