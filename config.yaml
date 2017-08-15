@@ -5,3 +5,40 @@ description: Get the current forecast
 keywords: ''
 name: MATRIX-Weather-App
 displayName: Forecast
+
+dataTypes:
+  #General Weather Information
+  forcast:
+    currentForecast: string
+    currentTemperature: string
+  #Google Map Location
+  location:
+    latitude: float
+    longitude: float
+    label: string
+
+
+screens:
+  - - forcast
+    - temparature
+  - - map
+
+widgets:
+  forcast:
+    display: label
+    type: forcast
+    key: currentForecast
+    label: Current Forcast
+  temparature:
+    display: label
+    type: forcast
+    key: currentTemperature
+    label: Current Temperature
+  map:
+    display: map
+    type: location
+    label: 'Location'
+
+
+
+

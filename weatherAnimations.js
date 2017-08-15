@@ -257,7 +257,7 @@ function humid(){
         //move sin wave
         counter += increase;
         //update matrix LEDs
-        matrix.led("rgba(0,"+(1+y*99)+",255,1)").render();
+        matrix.led("rgb(0,"+(1+y*99)+",255)").render();
     },10);
 }
 function drizzle(){
@@ -269,13 +269,13 @@ function drizzle(){
         //rainDrops
         var rainDrop1 = {
             arc: 20,
-            color: 'rgba(0,0,255,1)',
+            color: 'rgb(0,0,255)',
             start: 90+counter,
             blend: false
         };
         var rainDrop2 = {
             arc: 20,
-            color: 'rgba(0,0,255,1)',
+            color: 'rgb(0,0,255)',
             start: 450-counter,
             blend: false
         };
@@ -285,7 +285,7 @@ function drizzle(){
         //cloud
         var cloud = {
             arc: 90,
-            color: 'rgba(255,255,255,1)',
+            color: 'rgb(255,255,255)',
             start: 45+y*21.2,
             blend: false
         };
@@ -314,26 +314,26 @@ function lightRain(){
         //set1
         var rainDrop1 = {
             arc: 20,
-            color: 'rgba(0,0,255,1)',
+            color: 'rgb(0,0,255)',
             start: 90+counter1,
             blend: false
         };
         var rainDrop2 = {
             arc: 20,
-            color: 'rgba(0,0,255,1)',
+            color: 'rgb(0,0,255)',
             start: 450-counter1,
             blend: false
         };
         //set2
         var rainDrop3 = {
             arc: 20,
-            color: 'rgba(0,0,255,1)',
+            color: 'rgb(0,0,255)',
             start: 90+counter2,
             blend: false
         };
         var rainDrop4 = {
             arc: 20,
-            color: 'rgba(0,0,255,1)',
+            color: 'rgb(0,0,255)',
             start: 450-counter2,
             blend: false
         };
@@ -343,7 +343,7 @@ function lightRain(){
         //cloud
         var cloud = {
             arc: 90,
-            color: 'rgba(255,255,255,1)',
+            color: 'rgb(255,255,255)',
             start: 45+y*21.2,
             blend: false
         };
