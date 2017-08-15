@@ -14,6 +14,8 @@ This app currently contains animations for the following:
 - partly-cloudy-night
 
 Note: 
+- This app requires the MATRIX OS (https://matrix-io.github.io/matrix-documentation/)
+- You must include your own Dark Sky API Key in the app.js file (https://darksky.net/dev/account)
 - The LED's will turn red if there is a hazard (hail, thunderstorm, or tornado)
 - The LED's will turn yellow if there is no LED sequence for the current weather
 - This app relies on the following websites:
