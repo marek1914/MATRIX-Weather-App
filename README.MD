@@ -14,6 +14,7 @@ This app currently contains animations for the following:
 - partly-cloudy-night
 
 Notes:
+- The dashboard can be used from http://dash.matrix.one/
 - This app requires the MATRIX OS (https://matrix-io.github.io/matrix-documentation/)
 - You must include your own Dark Sky API Key in app.js (https://darksky.net/dev/account)
 - You can hard code your coordinates for better accuracy in app.js
@@ -22,3 +23,6 @@ Notes:
 - This app relies on the following websites:
     - https://darksky.net
     - http://ip-api.com
+    
+Dashboard Layout: 
+[![ScreenShot](http://i.imgur.com/oUi9ILw.png)]
