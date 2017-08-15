@@ -3,5 +3,5 @@ configVersion: 2
 
 description: Get the current forecast
 keywords: ''
-name: forecast
+name: MATRIX-Weather-App
 displayName: Forecast
