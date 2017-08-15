@@ -25,4 +25,4 @@ Notes:
     - http://ip-api.com
     
 Dashboard Layout: 
-[![ScreenShot](http://i.imgur.com/oUi9ILw.png)]
+![ScreenShot](http://i.imgur.com/oUi9ILw.png)
