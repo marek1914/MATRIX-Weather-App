@@ -12,7 +12,7 @@ var location = {};
 //Configure forecast options
 var forecast = new Forecast({
     service: 'darksky', //only api available
-    key: 'YOU_KEY_HERE', //darksky api key (https://darksky.net/dev/account)
+    key: 'YOUR_KEY_HERE', //darksky api key (https://darksky.net/dev/account)
     units: 'fahrenheit', //fahrenheit or celcius
     cache: false //cache forecast data
 });
