@@ -1,6 +1,6 @@
 {
-  "name": "baseapp.matrix",
-  "version": "1.0.1",
+  "name": "currentForecast",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^0.22.0",
     "cpu-stats": "^1.0.0",
-    "request": "^2.79.0"
+    "forecast": "^0.3.2",
+    "request": "^2.81.0"
   }
 }
