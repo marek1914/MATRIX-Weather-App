@@ -40,6 +40,7 @@ function getLocation(callback){
 //Selecting Weather Animation
 ////////////////////////////////
 function setWeatherAnim(forecast){
+    console.log(forecast);
     //clear MATRIX LEDs
         weatherAnims.emit('stop');
     //set MATRIX LED animation
@@ -54,10 +55,13 @@ function determineForecast(lat, lon){
     forecast.get([lat, lon], true, function(error, weather) {
         //stop if there's an error
         if(error)
-            console.log(error);
+            console.log(error+"\n\x1b[31mThere has been an issue retrieving the weather\nMake sure you set your API KEY \x1b[0m ");
         else{
             //pass weather into callback
-            setWeatherAnim(weather.currently.icon);//ADD THIS LATER!!!
+            setWeatherAnim(weather.currently.icon);
+
+            //send MATRIX dashboard values
+            //  ...
 
             //loop every X seconds
             setTimeout(function(){
