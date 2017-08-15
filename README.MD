@@ -1,4 +1,4 @@
-# Weather
+# MATRIX Weather
 Uses your Raspberry Pi's IP address to find your geolocation and local weather. The MATRIX's LEDs are set to show a light sequence based on the current weather conditions. Location and local weather description are reflected in the app dashboard.
 
 <b>This app currently contains animations for the following:</b>
