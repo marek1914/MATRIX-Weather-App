@@ -17,38 +17,6 @@ var forecast = new Forecast({
     cache: false //cache forecast data
 });
 
-//Data seen on MATRIX Dashboard
-var dashboardData = {
-    lat: 0.00,
-    lon: 0.00,
-    weather: 'fetching...',
-    temperature: 'fetching...'
-}
-
-////////////////////////////////
-//Update MATRIX Dashboard
-////////////////////////////////
-function updateDashboard(){
-    //prevent google maps pin at (0.00, 0.00)
-    if(dashboardData.lat !== 0.00 || dashboardData.lon !== 0.00){
-        //google maps location information
-        matrix.type('location').send({
-            'latitude': dashboardData.lat,
-            'longitude': dashboardData.lon,
-            'label': dashboardData.lat+','+dashboardData.lon
-        });
-        //forecast data
-        matrix.type('forcast').send({
-            'currentForecast': dashboardData.weather,
-            'currentTemperature': dashboardData.temperature.toString()
-        });
-    }
-    //loop every X milliseconds
-    setTimeout(function(){
-        updateDashboard();
-    }, 2000);
-}
-
 ////////////////////////////////
 //Obtaining location data
 ////////////////////////////////
@@ -102,12 +70,6 @@ function determineForecast(lat, lon){
             //pass weather into callback
             setWeatherAnim(weather.currently.icon);
 
-            //update MATRIX dashboard values
-            dashboardData.lat = lat;
-            dashboardData.lon = lon;
-            dashboardData.weather = weather.currently.summary;
-            dashboardData.temperature = weather.currently.temperature;
-
             //loop every X milliseconds
             setTimeout(function(){
                 determineForecast(lat,lon);
@@ -121,8 +83,6 @@ function determineForecast(lat, lon){
 ////////////////////////////////
 //Auto Obtain Location
 getLocation(function(){
-    //Start updating MATRIX dashboard
-    updateDashboard();
     //Start Forcast requests
     determineForecast(location.lat, location.lon);//input your coordinates for better accuracy ex. 25.7631,-80.1911
 });
