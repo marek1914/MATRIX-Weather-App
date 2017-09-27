@@ -13,6 +13,9 @@ Uses your Raspberry Pi's IP address to find your geolocation and local weather. 
 - partly-cloudy-day
 - partly-cloudy-night
 
+<b>Guide:</b>
+- https://www.element14.com/community/community/raspberry-pi/blog/2017/08/21/matrix-creator-weather-app
+
 <b>Notes:</b>
 - This app requires the MATRIX OS (https://matrix-io.github.io/matrix-documentation/)
 - You must include your own Dark Sky API Key in app.js (https://darksky.net/dev/account)
